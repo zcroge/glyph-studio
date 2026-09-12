@@ -61,6 +61,19 @@ export const CENSUS = [
   { token: "vowel.nub", unicodeHex: "F001E", object: "heaven prime (L8) -- naming still open", sound: "(vowel prime)", class: "prime", ring: "made", twin: null, chirality: null },
   { token: "IO", unicodeHex: "F001F", object: "compound vowel: I+O conjoined (G-A2)", sound: "io / yo", class: "ligature", ring: "made", twin: null, chirality: null, note: "Authored as its own coherent glyph -- NOT the two primes mechanically overlaid." },
   { token: "AE", unicodeHex: "F0020", object: "compound vowel: A+E conjoined (G-A2)", sound: "ae", class: "ligature", ring: "made", twin: null, chirality: null, note: "Authored as its own coherent glyph -- NOT the two primes mechanically overlaid." },
+
+  // The remaining six vowel ligatures -- grounded in orphograph's own
+  // src/letters.js (phonology-map.md §5's reflection=harmony law,
+  // finally executed there) but never back-ported into 00-laws.md's own
+  // CENSUS table or the UFO scaffold until now. Each is a compound of
+  // the four already-sounded vowel letters (I/O/E/A) per L8/G-A2 --
+  // none of them cost anything against L9's ≤12-base budget.
+  { token: "EA", unicodeHex: "F0021", object: "front-open vowel, one aperture step past E on the bright arc (spoke 4)", sound: "æ (\"cat\")", class: "ligature", ring: "made", twin: null, chirality: null, note: "Grounded by the reflection=harmony law -- front vowels occupy the bright arc." },
+  { token: "AI", unicodeHex: "F0022", object: "diphthong: A's open-onset quality (spoke 10)", sound: "aɪ (\"eye,\" \"time\")", class: "ligature", ring: "made", twin: null, chirality: null, note: "Offglide already written by the second glyph -- doesn't claim its own spoke." },
+  { token: "AO", unicodeHex: "F0023", object: "diphthong: A's open-onset quality (spoke 10), O as the written offglide", sound: "aʊ (\"cow,\" \"how\")", class: "ligature", ring: "made", twin: null, chirality: null },
+  { token: "OE", unicodeHex: "F0024", object: "mid back-central vowel -- E's true antiscion (mirror, spoke 11)", sound: "ə, ʌ (schwa; also stressed \"cup\")", class: "ligature", ring: "made", twin: null, chirality: null, note: "E's own mirror pair at the same aperture step -- the mid bright/dark pair." },
+  { token: "OO", unicodeHex: "F0025", object: "close back vowel -- I's true antiscion (mirror, spoke 12)", sound: "u (\"boot\")", class: "ligature", ring: "made", twin: null, chirality: null, note: "The dark arc's first step off the close pole -- I's own counterpart across the wheel." },
+  { token: "OI", unicodeHex: "F0026", object: "diphthong: an O-quality nucleus, sits at O's own pole (spoke 7)", sound: "ɔɪ (\"boy,\" \"toy\")", class: "ligature", ring: "made", twin: null, chirality: null, note: "Grounded by the reflection law, not just \"the spelling contains O.\"" },
 ];
 
 export function findGlyph(token) {
